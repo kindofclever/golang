@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="/static/css/tailwind.css" />
+  </head>
+  <body>
+    <header class="bg-blue-600 text-white p-4">
+      <h1 class="text-2xl">Welcome to My Portfolio</h1>
+    </header>
+    <nav class="bg-gray-200 p-4">
+      <ul class="flex space-x-4">
+        <li>
+          <a
+            href="#"
+            hx-get="/portfolio"
+            hx-target="#content"
+            hx-swap="innerHTML"
+            class="text-blue-600 hover:underline"
+            >Portfolio</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main
+      id="content"
+      class="p-4">
+      <p>Click on the links above to load content dynamically.</p>
+    </main>
+    <script
+      src="https://unpkg.com/htmx.org@1.9.12"
+      integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
